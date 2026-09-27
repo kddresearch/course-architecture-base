@@ -1,0 +1,58 @@
+name: Sync Canvas Architecture Template to External Repos
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '00_canvas_course_architecture_template.md'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  sync-to-mithril-and-all-hands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Base Template Repo (kddresearch/canvas-course-template-base)
+        uses: actions/checkout@v4
+        with:
+          path: base-repo
+
+      - name: Checkout Mithril_Shirt Repo (banazir/Sovereign-Stack-Mithril_Shirt)
+        uses: actions/checkout@v4
+        with:
+          repository: banazir/Sovereign-Stack-Mithril_Shirt
+          token: ${{ secrets.SYNC_PAT }}
+          path: mithril-repo
+
+      - name: Checkout all_hands Repo (kddresearch/all_hands)
+        uses: actions/checkout@v4
+        with:
+          repository: kddresearch/all_hands
+          token: ${{ secrets.SYNC_PAT }}
+          path: all-hands-repo
+
+      - name: Copy Files to Target Directories
+        run: |
+          # Copy to banazir/Sovereign-Stack-Mithril_Shirt/reference/templates/kstate_faculty/
+          mkdir -p mithril-repo/reference/templates/kstate_faculty/
+          cp base-repo/00_canvas_course_architecture_template.md mithril-repo/reference/templates/kstate_faculty/
+          
+          # Copy to kddresearch/all_hands/03_academics/
+          mkdir -p all-hands-repo/03_academics/
+          cp base-repo/00_canvas_course_architecture_template.md all-hands-repo/03_academics/
+
+      - name: Commit and Push to Mithril_Shirt
+        run: |
+          cd mithril-repo
+          git config user.name "Sovereign Stack Automator"
+          git config user.email "automator@kddresearch.org"
+          git add reference/templates/kstate_faculty/00_canvas_course_architecture_template.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync Canvas Architecture Template from kddresearch base repo" && git push)
+
+      - name: Commit and Push to all_hands
+        run: |
+          cd all-hands-repo
+          git config user.name "Sovereign Stack Automator"
+          git config user.email "automator@kddresearch.org"
+          git add 03_academics/00_canvas_course_architecture_template.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync Canvas Architecture Template from kddresearch base repo" && git push)
