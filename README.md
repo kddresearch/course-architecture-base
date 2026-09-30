@@ -19,7 +19,7 @@ document_last_updated_date: "2026-09-30"
 
 ---
 
-# 🗃️ Template Repository for KDD Lab Courses 📚
+<h1 align="center">🗃️ Template Repository for KDD Lab Courses 📚</h1>
 
 ---
 
