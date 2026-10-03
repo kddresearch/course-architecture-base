@@ -1,6 +1,6 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.2"
+document_version: "2.3"
 document_last_updated_date: "2026-10-02"
 -->
 
@@ -49,7 +49,7 @@ document_last_updated_date: "2026-10-02"
 | `.github/` | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
 | `admin/` | Course policies and syllabus resources. |
 | `assignments/` | Homework, machine problems, project milestones, and labs. |
-| `exams_quizzes/` | Quizzes, exams, and other assessments. |
+| `exams_quizzes/` | Quizzes, exams, and other assessments  **that are *taken*, not submitted***. |
 | `lectures/` | Core lecture materials and related assets. |
 | `modules/` | Weekly/topic-based module directories (`module_00` to `module_13`). |
 | `phases/` | High-level course progression phase wrappers (`phase_01` to `phase_05`). |
