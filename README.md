@@ -56,7 +56,7 @@ document_last_updated_date: "2026-10-02"
 | `platforms/` | Platform-specific configurations and assets (Canvas, Gemini, Piazza). |
 | `reading_materials/` | Assigned papers, texts, and supplementary reading. |
 | `slides/` | Slide decks and archived presentations. |
-| `project/` | Rubrics, sprint specs, and `docker` compute configs for the term project. |
+| `term_project/` | Rubrics, sprint specs, and `docker` compute configs for the term project. |
 | `README.md` | This file. |
 
 <hr>
