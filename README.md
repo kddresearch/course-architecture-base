@@ -72,6 +72,7 @@ document_last_updated_date: "2026-10-06"
 git clone {{REPO_URL}}
 cd {{REPO_NAME}}
 # Setup commands
+```
 
 ## 📂 Repository Structure (Full Tree)
 
