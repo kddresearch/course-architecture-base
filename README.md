@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.3"
-document_last_updated_date: "2026-10-02"
+document_version: "2.4"
+document_last_updated_date: "2026-10-06"
 -->
 
 <br>
@@ -72,3 +72,139 @@ document_last_updated_date: "2026-10-02"
 git clone {{REPO_URL}}
 cd {{REPO_NAME}}
 # Setup commands
+
+## 📂 Repository Structure (Full Tree)
+
+<details>
+<summary><b>Click to expand: Course Repository Template Directory Tree</b></summary>
+
+```
+Folder PATH listing for volume Windows
+Volume serial number is 60E2-4FEF
+C:.
+|   .gitignore
+|   LICENSE
+|   README.md
+|   structure_dump.txt
+|   
++---.github
+|   \---workflows
+|           sync_architecture_template.yml
+|           
++---admin
+|   +---policies
+|   |       .gitkeep
+|   |       
+|   \---syllabus
+|           .gitkeep
+|           
++---assignments
+|   |   .gitkeep
+|   |   
+|   +---homework
+|   |       .gitkeep
+|   |       
+|   +---machine_problems
+|   |       .gitkeep
+|   |       
+|   \---project_sprints
+|           .gitkeep
+|           
++---lectures
+|       .gitkeep
+|       
++---modules
+|   |   module_template.md
+|   |   
+|   +---module_00
+|   |       .gitkeep
+|   |       
+|   +---module_01
+|   |       .gitkeep
+|   |       
+|   +---module_02
+|   |       .gitkeep
+|   |       
+|   +---module_03
+|   |       .gitkeep
+|   |       
+|   +---module_04
+|   |       .gitkeep
+|   |       
+|   +---module_05
+|   |       .gitkeep
+|   |       
+|   +---module_06
+|   |       .gitkeep
+|   |       
+|   +---module_07
+|   |       .gitkeep
+|   |       
+|   +---module_08
+|   |       .gitkeep
+|   |       
+|   +---module_09
+|   |       .gitkeep
+|   |       
+|   +---module_10
+|   |       .gitkeep
+|   |       
+|   +---module_11
+|   |       .gitkeep
+|   |       
+|   +---module_12
+|   |       .gitkeep
+|   |       
+|   \---module_13
+|           .gitkeep
+|           
++---phases
+|   +---phase_01
+|   |       .gitkeep
+|   |       
+|   +---phase_02
+|   |       .gitkeep
+|   |       
+|   +---phase_03
+|   |       .gitkeep
+|   |       
+|   +---phase_04
+|   |       .gitkeep
+|   |       
+|   \---phase_05
+|           .gitkeep
+|           
++---platforms
+|   |   .gitkeep
+|   |   
+|   +---canvas
+|   |       .gitkeep
+|   |       
+|   +---gemini
+|   |       .gitkeep
+|   |       
+|   +---github
+|   |       github_intro.md
+|   |       
+|   +---moodle
+|   |       .gitkeep
+|   |       
+|   \---piazza
+|           .gitkeep
+|           
++---reading_materials
+|       .gitkeep
+|       
++---slides
+|   |   README.md
+|   |   
+|   \---archive
+|           .gitkeep
+|           
+\---term_project
+    |   .gitkeep
+    |   
+    \---docker
+            .gitkeep
+```
+</details>
