@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.4"
-document_last_updated_date: "2026-10-06"
+document_version: "2.5"
+document_last_updated_date: "2026-10-10"
 -->
 
 <br>
@@ -80,11 +80,12 @@ cd {{REPO_NAME}}
 <summary><b>Click to expand: Course Repository Template Directory Tree</b></summary>
 
 ```
-Folder PATH listing for volume Windows
-Volume serial number is 60E2-4FEF
+Folder PATH listing for volume OS
+Volume serial number is DC87-33C6
 C:.
 |   .gitignore
 |   LICENSE
+|   propagation_log.txt
 |   README.md
 |   structure_dump.txt
 |   
@@ -101,6 +102,7 @@ C:.
 |           
 +---assignments
 |   |   .gitkeep
+|   |   assignment_template.md
 |   |   
 |   +---homework
 |   |       .gitkeep
@@ -111,8 +113,13 @@ C:.
 |   \---project_sprints
 |           .gitkeep
 |           
++---exams_quizzes
+|       ,gitkeep
+|       
 +---lectures
 |       .gitkeep
+|       lecture_10_slide_template.md
+|       lecture_template.md
 |       
 +---modules
 |   |   module_template.md
@@ -206,6 +213,6 @@ C:.
     |   .gitkeep
     |   
     \---docker
-            .gitkeep
+            .gitkeep            
 ```
 </details>
