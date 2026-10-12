@@ -1,13 +1,25 @@
+<!-- ASSIGNMENT-META
+id: {{ASSIGNMENT_ID}}
+phase: {{PHASE_NAME}}
+module: {{MODULE_NAME}}
+released: {{RELEASE_DATE}}
+due: {{DUE_DATE}}
+prev: {{PREV_ASSIGNMENT_RELATIVE_PATH}}
+next: {{NEXT_ASSIGNMENT_RELATIVE_PATH}}
+-->
 # {{ASSIGNMENT_ID}}: {{ASSIGNMENT_TITLE}}
 **{{OPTIONAL_SUBTITLE}}**
 
-**📅 Due:** {{DUE_DATE}} | **💯 Points:** {{POINTS_TOTAL}} | **👥 Team:** {{TEAM_SIZE_RESTRICTION}}
+**🗓️ Released:** {{RELEASE_DATE}} | **📅 Due:** {{DUE_DATE}} | **💯 Points:** {{POINTS_TOTAL}} | **👥 Team:** {{TEAM_SIZE_RESTRICTION}}
 
 > **🚨 CRITICAL SUBMISSION POLICY**
 > **{{SUBMISSION_RULE_HEADER}}:** {{SUBMISSION_RULE_DESCRIPTION}}
 
 ## 1. Overview
 {{OVERVIEW_DESCRIPTION}}
+
+**Required Readings:**
+{{REQUIRED_READINGS_LIST}}
 
 ## 2. Initiating Your Draft (The AI Kit Procedure)
 Use the Generative AI Kit to help structure your submission. Follow these stages to systematically break down your assignment:
@@ -40,3 +52,12 @@ This assignment is worth {{POINTS_TOTAL}} points total.
 * **{{CRITERION_3_NAME}} ({{CRITERION_3_POINTS}} pts):** {{CRITERION_3_DESC}}
 * **{{CRITERION_4_NAME}} ({{CRITERION_4_POINTS}} pts):** {{CRITERION_4_DESC}}
 * **GenAI Verification (5 pts):** Includes the required GenAI log (`GenAI.pdf`) or explicitly states AI was not used.
+
+---
+## Assignment Navigation
+
+| ⬅️ Previous | 📝 Index | Next ➡️ |
+|:---|:---:|---:|
+| [{{PREV_ASSIGNMENT_TITLE}}]({{PREV_ASSIGNMENT_RELATIVE_PATH}}) | [[All Assignments]](../README.md#schedule) | [{{NEXT_ASSIGNMENT_TITLE}}]({{NEXT_ASSIGNMENT_RELATIVE_PATH}}) |
+
+[🏠 Course Home](../../README.md) · [⬆️ Module]({{MODULE_RELATIVE_PATH}}) · [⏫ Phase]({{PHASE_RELATIVE_PATH}})
