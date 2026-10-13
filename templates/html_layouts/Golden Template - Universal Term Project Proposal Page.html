@@ -1,210 +1,161 @@
-<div style="font-family: 'Aptos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #2d3b45;">
-
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 30px; font-size: 0.9em; color: #666;">
-        <div>
-            <a href="{{LINK_HOME}}" style="text-decoration: none; color: #666;">Home</a> &raquo; 
-            <a href="{{LINK_TERM_PROJECT_HOME}}" style="text-decoration: none; color: #666;">Term Project</a> &raquo; 
-            <span style="color: #512888; font-weight: bold;">Proposal Guidelines</span>
-        </div>
-        <div>
-            <a href="{{LINK_ASSIGNMENTS_INDEX}}" style="text-decoration: none; color: #d64309; font-weight: bold;">📝 All Assignments</a>
-        </div>
+<div style="font-family: Aptos, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0px auto; line-height: 1.6; color: #2d3b45;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eeeeee; padding-bottom: 10px; margin-bottom: 30px; font-size: 0.9em; color: #666666;">
+        <div><a href="{{COURSE_HOME_URL}}">Home</a> &raquo; <a href="{{TERM_PROJECT_HOME_URL}}">Term Project</a> &raquo; <span>Proposal Guidelines</span></div>
+        <div><a href="{{ASSIGNMENTS_URL}}">📝 All Assignments</a></div>
+    </div>
+    
+    <div style="background-color: #fff8e1; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #ffe0b2 #ffe0b2 #ffe0b2 #ff9800; padding: 15px; margin-bottom: 30px; border-radius: 4px;">
+        <h4><strong>🎯 Course Applicability</strong></h4>
+        <p>This document applies to: <strong>{{COURSE_NUMBER}}</strong> ({{COURSE_TITLE}}). <br /><em>Please verify specific due dates on your course Canvas calendar.</em></p>
     </div>
 
-    <div style="background-color: #fff8e1; border: 1px solid #ffe0b2; border-left: 5px solid #ff9800; padding: 15px; margin-bottom: 30px; border-radius: 4px;">
-        <h4 style="margin-top: 0; color: #e65100;"><strong>🎯 Course Applicability</strong></h4>
-        <p style="margin-bottom: 0; font-size: 0.95em;">
-            This document applies to: 
-            <strong>CIS 530/730</strong>, <strong>CIS 732/830</strong>, <strong>CIS 531/731</strong>, <strong>CIS 536/736</strong>, <strong>CIS 690/798</strong>, <strong>CIS 890/990</strong>.
-            <br><em>Please verify specific due dates on your course Canvas calendar.</em>
-        </p>
+    <div style="background-color: #512888; padding: 30px; border-radius: 8px; color: white; margin-bottom: 30px;">
+        <span style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.85em; background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 4px;">Capstones &amp; Project Framework</span>
+        <h1 style="margin: 15px 0 5px 0; font-size: 2.2em;">Term Project Proposal</h1>
+        <p style="margin: 0; font-size: 1.1em; opacity: 0.9;">Design, Implementation, and Evaluation of an Intelligent Agent &amp; AI System</p>
     </div>
 
-    <div style="background-color: #512888; padding: 30px; border-radius: 8px; color: white; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <span style="background-color: rgba(255,255,255,0.2); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8em;">CAPSTONE PROJECT</span>
-        <h1 style="margin: 15px 0 5px 0; font-size: 28px;">Term Project Proposal</h1>
-        <p style="margin: 0; font-size: 18px;">Design, Implementation, and Evaluation of an AI System</p>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; background-color: #f8f9fa; border-radius: 8px; padding: 20px; border: 1px solid #e0e0e0;">
+        <div style="flex: 1 1 0%; min-width: 150px;"><strong>🏆 Total Value:</strong> <br />{{POINTS_TOTAL}} Points</div>
+        <div style="flex: 1 1 0%; min-width: 150px;"><strong>👥 Team Size:</strong> <br />{{TEAM_SIZE_RANGE}} Students</div>
+        <div style="flex: 1 1 0%; min-width: 150px;"><strong>📅 Proposal Due:</strong> <br />{{DATE_PROPOSAL_DUE}}</div>
+        <div style="flex: 1 1 0%; min-width: 150px;"><strong>🏁 Final Artifacts:</strong> <br />{{DATE_FINAL_DUE}}</div>
     </div>
 
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; background-color: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px;">
-        <div style="flex: 1; min-width: 150px;">
-            <strong>🏆 Total Value:</strong><br>{{POINTS_TOTAL}}
-        </div>
-        <div style="flex: 1; min-width: 150px;">
-            <strong>👥 Team Size:</strong><br>{{TEAM_SIZE_RANGE}}
-        </div>
-        <div style="flex: 1; min-width: 150px;">
-            <strong>📅 Proposal Due:</strong><br>{{DATE_PROPOSAL_DUE}}
-        </div>
-        <div style="flex: 1; min-width: 150px;">
-            <strong>🏁 Final Artifacts:</strong><br>{{DATE_FINAL_DUE}}
-        </div>
-    </div>
-
-    <div style="background-color: #e3f2fd; border: 1px solid #bbdefb; border-left: 5px solid #2196f3; padding: 20px; margin-bottom: 40px; border-radius: 4px;">
-        <h4 style="margin-top: 0; color: #0d47a1;"><strong>⚠️ Protocol: Individual Proposals, Team Projects</strong></h4>
-        <p style="color: #444; margin-bottom: 10px;">To ensure every student has a grasp of the project scope, we follow a strict submission protocol:</p>
-        <ul style="margin-bottom: 0; padding-left: 20px; color: #444;">
-            <li style="margin-bottom: 5px;"><strong>Proposals are INDIVIDUAL:</strong> Even if you have formed a team, <strong>EACH</strong> member must submit their own PDF proposal.</li>
-            <li style="margin-bottom: 5px;"><strong>What You Can Share:</strong> Team members may copy/paste the same <strong>Problem Statement</strong> and <strong>Background/Related Work</strong> sections.</li>
-            <li style="margin-bottom: 5px;"><strong>What Must Be Unique:</strong> Your <strong>Methodology</strong> and <strong>Milestones</strong> must reflect <em>your</em> specific role and contributions to the effort.</li>
-            <li><strong>Co-Authoring:</strong> You may submit shared Presentations and Final Reports <strong>ONLY AFTER</strong> your project has been approved and you have been assigned an official Team Number.</li>
+    <div style="background-color: #e3f2fd; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #bbdefb #bbdefb #bbdefb #2196f3; padding: 20px; margin-bottom: 40px; border-radius: 4px;">
+        <h4><strong>⚠️ Protocol: Individual Proposals, Team Projects</strong></h4>
+        <p>To ensure every student has a rigorous grasp of the project scope, we follow a strict submission protocol:</p>
+        <ul style="margin-bottom: 0; padding-left: 20px;">
+            <li><strong>Proposals are INDIVIDUAL:</strong> Even if you have formed a team (max {{MAX_TEAM_SIZE}}), <strong>EACH</strong> member must submit their own PDF proposal.</li>
+            <li><strong>What You Can Share:</strong> Team members may copy/paste the same <strong>Problem Statement</strong> and <strong>Background/Related Work</strong> sections.</li>
+            <li><strong>What Must Be Unique:</strong> Your <strong>Methodology</strong> and <strong>Milestones</strong> must reflect <em>your</em> specific role and technical contributions to the effort.</li>
+            <li><strong>Co-Authoring:</strong> You may submit shared Interim Reports, Presentations, and Final Codebases/Reports <strong>ONLY AFTER</strong> your proposal has been approved and your team has been officially registered.</li>
         </ul>
     </div>
 
     <div style="margin-bottom: 40px;">
-        <h2 style="border-bottom: 2px solid #512888; padding-bottom: 10px; color: #512888;">Methodological Pillars</h2>
-        <p style="font-size: 1.1em;">This course engages the five pillars of modern AI—language, vision, learning, trust, and systems—to transition students from theoretical understanding to the construction of robust, intelligent agents.</p>
-        
+        <h2>Methodological Pillars (The How)</h2>
+        <p>This curriculum engages the five pillars of modern artificial intelligence and machine learning—language, vision, reinforcement learning, trustworthiness, and applied systems—to transition students from theoretical principles to the construction of robust, intelligent agents.</p>
         <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
-            
-            <div style="flex: 1; min-width: 250px; background-color: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 6px;">
-                <strong style="color: #1b5e20;">Natural Language [NL]</strong>
-                <p style="font-size: 0.9em; margin-bottom: 0; color: #2d3b45;">Focuses on representation, extraction, reasoning, trust, and longitudinal modeling of meaning in text and multimodal language artifacts.</p>
+            <div style="flex: 1 1 0%; min-width: 250px; background-color: #e8f5e9; padding: 15px; border-radius: 6px; border: 1px solid #c8e6c9;">
+                <strong>Natural Language [NL]</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on representation, extraction, reasoning, trust, and longitudinal modeling of meaning in text and multimodal language artifacts.</p>
             </div>
-            
-            <div style="flex: 1; min-width: 250px; background-color: #ffebee; border: 1px solid #ffcdd2; padding: 15px; border-radius: 6px;">
-                <strong style="color: #b71c1c;">Computer Vision [CV]</strong>
-                <p style="font-size: 0.9em; margin-bottom: 0; color: #2d3b45;">Focuses on structured perception, hierarchical interpretation, and explainable visual understanding, especially where vision is tightly coupled with language.</p>
+            <div style="flex: 1 1 0%; min-width: 250px; background-color: #ffebee; padding: 15px; border-radius: 6px; border: 1px solid #ffcdd2;">
+                <strong>Computer Vision [CV]</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on structured perception, hierarchical interpretation, and explainable visual understanding, especially where vision is tightly coupled with language.</p>
             </div>
-            
-            <div style="flex: 1; min-width: 250px; background-color: #e3f2fd; border: 1px solid #bbdefb; padding: 15px; border-radius: 6px;">
-                <strong style="color: #0d47a1;">Reinforcement Learning [RL]</strong>
-                <p style="font-size: 0.9em; margin-bottom: 0; color: #2d3b45;">Focuses on learning, reasoning, and decision-making under uncertainty, emphasizing interpretability, causal structure, and semantic representations.</p>
+            <div style="flex: 1 1 0%; min-width: 250px; background-color: #e3f2fd; padding: 15px; border-radius: 6px; border: 1px solid #bbdefb;">
+                <strong>Reinforcement Learning [RL]</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on learning, reasoning, and decision-making under uncertainty, emphasizing interpretability, causal structure, and semantic representations.</p>
             </div>
-            
-            <div style="flex: 1; min-width: 250px; background-color: #fff3e0; border: 1px solid #ffe0b2; padding: 15px; border-radius: 6px;">
-                <strong style="color: #6b624b;">Secure &amp; Trustworthy [ST]</strong>
-                <p style="font-size: 0.9em; margin-bottom: 0; color: #2d3b45;">Focuses on ensuring reliability, robustness, interpretability, and alignment of learning and reasoning systems in high-stakes environments.</p>
+            <div style="flex: 1 1 0%; min-width: 250px; background-color: #fff3e0; padding: 15px; border-radius: 6px; border: 1px solid #ffe0b2;">
+                <strong>Secure &amp; Trustworthy [ST]</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on ensuring reliability, robustness, interpretability, and alignment of learning and reasoning systems in high-stakes environments.</p>
             </div>
-            
-            <div style="flex: 1; min-width: 250px; background-color: #ffe0b2; border: 1px solid #ffcc80; padding: 15px; border-radius: 6px;">
-                <strong style="color: #bf5700;">Applied AI Systems [OA]</strong>
-                <p style="font-size: 0.9em; margin-bottom: 0; color: #2d3b45;">Serves as the translational and integrative layer connecting foundational research to real-world systems, constraints, and performance considerations.</p>
+            <div style="flex: 1 1 0%; min-width: 250px; background-color: #f3e5f5; padding: 15px; border-radius: 6px; border: 1px solid #e1bee7;">
+                <strong>Applied AI Systems [OA]</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Serves as the translational and integrative layer connecting foundational AI research to real-world deployment, constraints, and performance considerations.</p>
             </div>
-
         </div>
     </div>
 
     <div style="margin-bottom: 40px;">
-        <h2 style="border-bottom: 2px solid #512888; padding-bottom: 10px; color: #512888;">Project Category Tracks</h2>
-        <p>Your project generally falls into one of these four categories.</p>
-
-        <div style="margin-bottom: 20px;">
-            <h3 style="color: #2d3b45; border-left: 4px solid #512888; padding-left: 10px; margin-top: 0;">Track 1: Search, Games, and Planning</h3>
-            <p>This category covers problems where an agent must navigate a state space to achieve a goal, often against an adversary or within complex constraints. While classical search algorithms (A*, Minimax) are foundational, modern projects often integrate <strong>Reinforcement Learning [RL]</strong> to handle high-dimensional state spaces.</p>
+        <h2>Project Category Tracks (The What)</h2>
+        <p>Your project must align with one of these four foundational AI application tracks:</p>
+        
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track 1: Search, Games, and Planning</h3>
+            <p style="margin-bottom: 0;">Covers problems where an agent must navigate a complex state space to achieve a goal, often against an adversary or under strict resource constraints. While classical search algorithms (A*, Minimax, MCTS) are foundational, projects frequently integrate <strong>Reinforcement Learning [RL]</strong> or heuristic neural models to handle high-dimensional state spaces.</p>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <h3 style="color: #2d3b45; border-left: 4px solid #512888; padding-left: 10px; margin-top: 0;">Track 2: Knowledge, Logic, and Reasoning</h3>
-            <p>This category focuses on representing the world through symbols, ontologies, and logical rules. Projects here often utilize <strong>Secure &amp; Trustworthy [ST]</strong> methodologies to ensure that reasoning systems are not only correct but transparent and free from logical fallacies or biases.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track 2: Knowledge, Logic, and Reasoning</h3>
+            <p style="margin-bottom: 0;">Focuses on representing structured knowledge through ontologies, knowledge graphs, and logical rules. Projects here often leverage <strong>Secure &amp; Trustworthy [ST]</strong> or <strong>Natural Language [NL]</strong> methodologies to ensure that automated reasoning systems remain transparent, verifiable, and grounded.</p>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <h3 style="color: #2d3b45; border-left: 4px solid #512888; padding-left: 10px; margin-top: 0;">Track 3: Machine Learning &amp; Probabilistic Models</h3>
-            <p>This category encompasses statistical modeling, spanning from Bayesian Networks to Deep Learning. A critical aspect is often the <strong>Applied AI Systems [OA]</strong> methodology, bridging the gap between theoretical models and usable tools.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track 3: Machine Learning &amp; Probabilistic Models</h3>
+            <p style="margin-bottom: 0;">Encompasses statistical learning, spanning from Bayesian networks and deep neural architectures to foundation model fine-tuning. A critical emphasis is placed on <strong>Applied AI Systems [OA]</strong> engineering, bridging theoretical modeling with rigorous validation.</p>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <h3 style="color: #2d3b45; border-left: 4px solid #512888; padding-left: 10px; margin-top: 0;">Track 4: Perception and Agentic Systems</h3>
-            <p>This category deals with agents that perceive their environment through sensors (text, vision, audio). This track heavily utilizes <strong>Computer Vision [CV]</strong> and <strong>Natural Language [NL]</strong> to ground abstract data into actionable information.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 0;">
+            <h3 style="margin-top: 0; color: #512888;">Track 4: Perception and Agentic Systems</h3>
+            <p style="margin-bottom: 0;">Deals with autonomous agents that perceive and act within complex environments through multimodal sensors (text, vision, audio). This track heavily integrates <strong>Computer Vision [CV]</strong> and <strong>Natural Language [NL]</strong> to ground unstructured perceptual streams into actionable agentic policies.</p>
         </div>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 40px 0;" />
-
     <div style="margin-bottom: 40px;">
-        <h2 style="border-bottom: 2px solid #512888; padding-bottom: 10px; color: #512888;">Proposal Document Format</h2>
-        <p>Your proposal must be a <strong>1&ndash;1.5 page PDF</strong> containing the following five sections:</p>
-
-        <div style="background-color: #fff; border: 1px solid #ddd; padding: 25px; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #512888;">1. Introduction</h4>
-            <ul style="padding-left: 20px; color: #444;">
-                <li><strong>Problem Statement:</strong> Clearly describe the problem you intend to solve.</li>
-                <li><strong>Goal:</strong> What will your system accomplish?</li>
-                <li><strong>Context:</strong> Define your dataset/use case. Is this Research (novelty) or Application (utility)?</li>
+        <h2>Proposal Document Format</h2>
+        <p>Your proposal must be a concise <strong>1&ndash;1.5 page PDF</strong> structured into the following five required sections:</p>
+        <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #dddddd;">
+            <h4 style="color: #512888; margin-top: 0;">1. Introduction</h4>
+            <ul style="margin-bottom: 20px;">
+                <li><strong>Problem Statement:</strong> Clearly describe the AI/ML problem you intend to solve.</li>
+                <li><strong>Goal:</strong> What specific capability or improvement will your system accomplish?</li>
+                <li><strong>Context &amp; Dataset:</strong> Define your data source or domain. Clarify whether this is an investigation of novelty (Research) or utility (Application).</li>
             </ul>
 
             <h4 style="color: #512888;">2. Background &amp; Related Work</h4>
-            <ul style="padding-left: 20px; color: #444;">
-                <li>Summarize relevant prior work.</li>
-                <li><strong>Requirement:</strong> At least 3 references.</li>
-                <li><strong>Requirement:</strong> At least one archival/peer-reviewed source (ACM, IEEE, etc.).</li>
+            <ul style="margin-bottom: 20px;">
+                <li>Summarize relevant prior work and foundational literature.</li>
+                <li><strong>Requirement:</strong> At least 3 citations/references.</li>
+                <li><strong>Requirement:</strong> At least one archival/peer-reviewed source (ACM, IEEE, NeurIPS, ICML, CVPR, etc.).</li>
             </ul>
 
             <h4 style="color: #512888;">3. Methodology</h4>
-            <ul style="padding-left: 20px; color: #444;">
-                <li><strong>Baselines:</strong> What existing method will serve as comparison? (e.g., "Random Forest").</li>
-                <li><strong>Proposed Approach:</strong> What new method/architecture will you implement?</li>
-                <li><strong>Specifics:</strong> Detail your architecture, algorithms, and libraries. Avoid vague statements.</li>
+            <ul style="margin-bottom: 20px;">
+                <li><strong>Baselines:</strong> What existing method or model architecture will serve as your comparative baseline? (e.g., standard fine-tuned baseline, rule-based agent).</li>
+                <li><strong>Proposed Approach:</strong> What novel algorithm, architecture, or system integration will you implement?</li>
+                <li><strong>Technical Specifics:</strong> Detail your modeling framework, training objective, algorithms, and software libraries. Avoid vague assertions.</li>
             </ul>
 
             <h4 style="color: #512888;">4. Evaluation Plan</h4>
-            <ul style="padding-left: 20px; color: #444;">
-                <li><strong>Quantitative:</strong> Accuracy, F1, MSE, Runtime.</li>
-                <li><strong>Qualitative:</strong> Visual fidelity, user study.</li>
-                <li><strong>Validation:</strong> Train/test splits, cross-validation, unit testing.</li>
+            <ul style="margin-bottom: 20px;">
+                <li><strong>Quantitative Metrics:</strong> Accuracy, F1-score, BLEU, ROC-AUC, reward convergence, or latency benchmarks.</li>
+                <li><strong>Qualitative Assessment:</strong> Error analysis, sample generation audits, or interpretive case studies.</li>
+                <li><strong>Validation Rigor:</strong> Train/test splits, cross-validation protocols, and statistical hypothesis testing (e.g., paired t-tests).</li>
             </ul>
 
-            <h4 style="margin-bottom: 0; color: #512888;">5. Milestones &amp; Timeline</h4>
-            <ul style="padding-left: 20px; color: #444; margin-bottom: 0;">
-                <li>List 3&ndash;6 dated objectives (e.g., "{{DATE_MILESTONE_EX}}: Baseline Implemented").</li>
+            <h4 style="color: #512888;">5. Milestones &amp; Timeline</h4>
+            <ul style="margin-bottom: 0;">
+                <li>List 3&ndash;6 dated objectives (e.g., <em>{{DATE_MILESTONE_EX}}: Baseline Architecture &amp; Data Pipeline Implemented</em>).</li>
             </ul>
         </div>
     </div>
 
     <div style="margin-bottom: 40px;">
-        <h3 style="color: #512888;">Logistics &amp; Grading</h3>
-        <table style="width: 100%; border-collapse: collapse; border: 1px solid #e0e0e0;">
-            <thead style="background-color: #f5f5f5;">
-                <tr>
-                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left; width: 25%;">Component</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
+        <h2>Logistics &amp; Grading</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #f1f1f1; border-bottom: 2px solid #ddd;">
+                    <th style="padding: 12px; text-align: left; width: 25%;">Component</th>
+                    <th style="padding: 12px; text-align: left;">Details</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Teamwork</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">{{TEAM_SIZE_RANGE}} Students. Proposals submitted individually.</td>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px;"><strong>Teamwork</strong></td>
+                    <td style="padding: 12px;">{{TEAM_SIZE_RANGE}} Students per team. Individual proposal PDF submissions required for verification.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px;"><strong>Key Milestones</strong></td>
+                    <td style="padding: 12px;">Proposal ({{DATE_PROPOSAL_DUE}}), Interim Report ({{DATE_INTERIM}}), Final Presentations ({{DATE_PRESENTATION}}), Final Report &amp; Codebase ({{DATE_FINAL_DUE}}).</td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Deliverables</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Interim Updates ({{DATE_INTERIM}}), Final Presentation ({{DATE_PRESENTATION}}), Final Report (IEEE/ACM format).</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ethics &amp; GenAI</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">
-                        GenAI (ChatGPT/Gemini) may be used for <em>editing</em> and <em>debugging</em> only. 
-                        <strong>Prohibited:</strong> Generating literature reviews or core ideas from scratch. 
-                        <br><br>
-                        <strong>👉 Resources:</strong> For approved prompt templates, context packets (MD/PDF), and instructions, please consult the <a href="{{LINK_GENAI_MATERIALS}}" style="color: #d64309; font-weight: bold;">Generative AI Project Kit</a>.
-                    </td>
+                    <td style="padding: 12px;"><strong>Ethics &amp; GenAI Protocol</strong></td>
+                    <td style="padding: 12px;">Generative AI tools (ChatGPT, Gemini, Claude) may be used strictly for <em>coding assistance, syntax debugging, and editorial review</em>. <strong>Prohibited:</strong> Generating core literature reviews, architectural designs, or written narratives from scratch.<br /><br /><strong>👉 Resources:</strong> For approved prompt templates, context packets (MD/PDF), and setup instructions, consult the <a href="{{GENAI_KIT_URL}}" target="_blank" rel="noopener">Generative AI Project Kit</a>.</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div style="margin-top: 30px;">
-        
-        <a href="{{LINK_HOME}}" style="display: block; width: auto; background-color: #f8f9fa; border: 1px solid #ccc; color: #444; padding: 15px; text-align: center; text-decoration: none; font-weight: bold; border-radius: 8px; margin-bottom: 15px; transition: background 0.2s; font-size: 1.1em;">
-            🏠 Return to Course Home
-        </a>
-
-        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-            
-            <a href="{{LINK_ASSIGNMENTS_INDEX}}" title="View All Assignments" style="flex: 1; max-width: 250px; background-color: #fff3cd; color: #856404; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.1em; border: 1px solid #ffeeba; padding: 10px; font-weight: 600;">
-                <span style="font-size: 1.2em; margin-right: 8px;">📝</span> All HW
-            </a>
-
-            <a href="{{LINK_MODULE_UP}}" title="Up to Module" style="flex: 1; max-width: 250px; background-color: #f0f0f0; color: #444; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.1em; border: 1px solid #ddd; padding: 10px; font-weight: 600;">
-                <span style="font-size: 1.2em; margin-right: 8px;">⬆️</span> Module
-            </a>
-            
-            <a href="{{LINK_PHASE_UP}}" title="Up to Phase" style="flex: 1; max-width: 250px; background-color: #f0f0f0; color: #444; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.1em; border: 1px solid #ddd; padding: 10px; font-weight: 600;">
-                <span style="font-size: 1.2em; margin-right: 8px;">⏫</span> Phase
-            </a>
-
+    <div style="margin-top: 30px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+        <p><a href="{{COURSE_HOME_URL}}" style="color: #512888; text-decoration: none; font-weight: bold;">🏠 Return to Course Home</a></p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+            <a href="{{ASSIGNMENTS_URL}}" style="color: #333; text-decoration: none; font-size: 0.9em;" title="View All Assignments">📝 All Assignments</a> &bull; 
+            <a href="{{MODULE_URL}}" style="color: #333; text-decoration: none; font-size: 0.9em;" title="Up to Module">⬆️ Course Module</a> &bull; 
+            <a href="{{PHASE_URL}}" style="color: #333; text-decoration: none; font-size: 0.9em;" title="Up to Phase">⏫ Project Phase</a>
         </div>
     </div>
-
 </div>
