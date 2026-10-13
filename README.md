@@ -1,7 +1,8 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.5"
-document_last_updated_date: "2026-10-10"
+document_version: "2.6"
+document_last_updated_date: "2026-10-12"
+doctument_last_updated_time: "21:56:20 CDT"
 -->
 
 <br>
@@ -85,7 +86,10 @@ Volume serial number is DC87-33C6
 C:.
 |   .gitignore
 |   LICENSE
-|   propagation_log.txt
+|   propagation_log_G.txt
+|   propagation_log_H.txt
+|   propagation_log_I.txt
+|   propagation_log_OLD.txt
 |   README.md
 |   structure_dump.txt
 |   
@@ -202,6 +206,7 @@ C:.
 |           
 +---reading_materials
 |       .gitkeep
+|       README.md
 |       
 +---slides
 |   |   README.md
@@ -209,10 +214,24 @@ C:.
 |   \---archive
 |           .gitkeep
 |           
++---templates
+|   +---html_layouts
+|   |       Golden Template - Universal Assignment Page.html
+|   |       Golden Template - Universal Lecture Page.html
+|   |       Golden Template - Universal Module Page.html
+|   |       Golden Template - Universal Phase Page.html
+|   |       Golden Template - Universal Term Project Proposal Page.html
+|   |       Golden-Template.html
+|   |       README.md
+|   |       
+|   \---repo_structures
+|           module_README_template.md
+|           phase_README_template.md
+|           
 \---term_project
     |   .gitkeep
     |   
     \---docker
-            .gitkeep            
+            .gitkeep
 ```
 </details>
