@@ -6,13 +6,13 @@
     
     <div style="background-color: #fff8e1; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #ffe0b2 #ffe0b2 #ffe0b2 #ff9800; padding: 15px; margin-bottom: 30px; border-radius: 4px;">
         <h4><strong>🎯 Course Applicability</strong></h4>
-        <p>This document applies to: <strong>{{COURSE_NUMBER}}</strong> ({{COURSE_TITLE}}). <br /><em>Please verify specific due dates on your course Canvas calendar.</em></p>
+        <p>This document applies to: <strong>{{COURSE_NUMBER}}</strong> ({{COURSE_TITLE}}). <br /><em>Please verify specific due dates on your course Canvas calendar. Note: The definition and cardinality (e.g., 3x5x5, 5x5) of each taxonomy dimension are fully customizable for each individual course architecture.</em></p>
     </div>
 
     <div style="background-color: #512888; padding: 30px; border-radius: 8px; color: white; margin-bottom: 30px;">
         <span style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.85em; background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 4px;">Capstones &amp; Project Framework</span>
         <h1 style="margin: 15px 0 5px 0; font-size: 2.2em;">Term Project Proposal</h1>
-        <p style="margin: 0; font-size: 1.1em; opacity: 0.9;">Design, Implementation, and Evaluation of an Intelligent Agent &amp; AI System</p>
+        <p style="margin: 0; font-size: 1.1em; opacity: 0.9;">{{PROJECT_SUBTITLE}}</p>
     </div>
 
     <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; background-color: #f8f9fa; border-radius: 8px; padding: 20px; border: 1px solid #e0e0e0;">
@@ -33,57 +33,86 @@
         </ul>
     </div>
 
+    <!-- ========================================================================= -->
+    <!-- DIMENSION 1: Harmonized 5-Box Pastel Palette                              -->
+    <!-- ========================================================================= -->
     <div style="margin-bottom: 40px;">
-        <h2>Methodological Pillars (The How)</h2>
-        <p>This curriculum engages the five pillars of modern artificial intelligence and machine learning—language, vision, reinforcement learning, trustworthiness, and applied systems—to transition students from theoretical principles to the construction of robust, intelligent agents.</p>
+        <h2>{{DIMENSION_1_TITLE}} (The How)</h2>
+        <p>{{DIMENSION_1_DESCRIPTION}}</p>
         <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+            <!-- Value 1: Green Tint -->
             <div style="flex: 1 1 0%; min-width: 250px; background-color: #e8f5e9; padding: 15px; border-radius: 6px; border: 1px solid #c8e6c9;">
-                <strong>Natural Language [NL]</strong>
-                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on representation, extraction, reasoning, trust, and longitudinal modeling of meaning in text and multimodal language artifacts.</p>
+                <strong>Methodology/General Category: Value 1</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Description for methodological pillar or category value 1, focusing on [facets, examples, or use cases].</p>
             </div>
+            <!-- Value 2: Red/Pink Tint -->
             <div style="flex: 1 1 0%; min-width: 250px; background-color: #ffebee; padding: 15px; border-radius: 6px; border: 1px solid #ffcdd2;">
-                <strong>Computer Vision [CV]</strong>
-                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on structured perception, hierarchical interpretation, and explainable visual understanding, especially where vision is tightly coupled with language.</p>
+                <strong>Methodology/General Category: Value 2</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Description for methodological pillar or category value 2, focusing on [facets, examples, or use cases].</p>
             </div>
+            <!-- Value 3: Blue Tint -->
             <div style="flex: 1 1 0%; min-width: 250px; background-color: #e3f2fd; padding: 15px; border-radius: 6px; border: 1px solid #bbdefb;">
-                <strong>Reinforcement Learning [RL]</strong>
-                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on learning, reasoning, and decision-making under uncertainty, emphasizing interpretability, causal structure, and semantic representations.</p>
+                <strong>Methodology/General Category: Value 3</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Description for methodological pillar or category value 3, focusing on [facets, examples, or use cases].</p>
             </div>
+            <!-- Value 4: Orange Tint -->
             <div style="flex: 1 1 0%; min-width: 250px; background-color: #fff3e0; padding: 15px; border-radius: 6px; border: 1px solid #ffe0b2;">
-                <strong>Secure &amp; Trustworthy [ST]</strong>
-                <p style="font-size: 0.95em; margin-bottom: 0;">Focuses on ensuring reliability, robustness, interpretability, and alignment of learning and reasoning systems in high-stakes environments.</p>
+                <strong>Methodology/General Category: Value 4</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Description for methodological pillar or category value 4, focusing on [facets, examples, or use cases].</p>
             </div>
+            <!-- Value 5: Purple Tint -->
             <div style="flex: 1 1 0%; min-width: 250px; background-color: #f3e5f5; padding: 15px; border-radius: 6px; border: 1px solid #e1bee7;">
-                <strong>Applied AI Systems [OA]</strong>
-                <p style="font-size: 0.95em; margin-bottom: 0;">Serves as the translational and integrative layer connecting foundational AI research to real-world deployment, constraints, and performance considerations.</p>
+                <strong>Methodology/General Category: Value 5</strong>
+                <p style="font-size: 0.95em; margin-bottom: 0;">Description for methodological pillar or category value 5, focusing on [facets, examples, or use cases].</p>
             </div>
         </div>
     </div>
 
+    <!-- ========================================================================= -->
+    <!-- DIMENSION 2: Accent Left-Border Card Layout (5-Box Track/Topic Layout)    -->
+    <!-- ========================================================================= -->
     <div style="margin-bottom: 40px;">
-        <h2>Project Category Tracks (The What)</h2>
-        <p>Your project must align with one of these four foundational AI application tracks:</p>
+        <h2>{{DIMENSION_2_TITLE}} (The What)</h2>
+        <p>{{DIMENSION_2_DESCRIPTION}}</p>
         
-        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
-            <h3 style="margin-top: 0; color: #512888;">Track 1: Search, Games, and Planning</h3>
-            <p style="margin-bottom: 0;">Covers problems where an agent must navigate a complex state space to achieve a goal, often against an adversary or under strict resource constraints. While classical search algorithms (A*, Minimax, MCTS) are foundational, projects frequently integrate <strong>Reinforcement Learning [RL]</strong> or heuristic neural models to handle high-dimensional state spaces.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-left: 4px solid #512888; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track/Topic: Value 1</h3>
+            <p style="margin-bottom: 0;">Description for topic/category value 1, defining the [technical scope, range, and/or examples].</p>
         </div>
 
-        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
-            <h3 style="margin-top: 0; color: #512888;">Track 2: Knowledge, Logic, and Reasoning</h3>
-            <p style="margin-bottom: 0;">Focuses on representing structured knowledge through ontologies, knowledge graphs, and logical rules. Projects here often leverage <strong>Secure &amp; Trustworthy [ST]</strong> or <strong>Natural Language [NL]</strong> methodologies to ensure that automated reasoning systems remain transparent, verifiable, and grounded.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-left: 4px solid #512888; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track/Topic: Value 2</h3>
+            <p style="margin-bottom: 0;">Description for topic/category value 2, defining the [technical scope, range, and/or examples].</p>
         </div>
 
-        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
-            <h3 style="margin-top: 0; color: #512888;">Track 3: Machine Learning &amp; Probabilistic Models</h3>
-            <p style="margin-bottom: 0;">Encompasses statistical learning, spanning from Bayesian networks and deep neural architectures to foundation model fine-tuning. A critical emphasis is placed on <strong>Applied AI Systems [OA]</strong> engineering, bridging theoretical modeling with rigorous validation.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-left: 4px solid #512888; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track/Topic: Value 3</h3>
+            <p style="margin-bottom: 0;">Description for topic/category value 3, defining the [technical scope, range, and/or examples].</p>
         </div>
 
-        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px; margin-bottom: 0;">
-            <h3 style="margin-top: 0; color: #512888;">Track 4: Perception and Agentic Systems</h3>
-            <p style="margin-bottom: 0;">Deals with autonomous agents that perceive and act within complex environments through multimodal sensors (text, vision, audio). This track heavily integrates <strong>Computer Vision [CV]</strong> and <strong>Natural Language [NL]</strong> to ground unstructured perceptual streams into actionable agentic policies.</p>
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-left: 4px solid #512888; border-radius: 6px; padding: 20px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #512888;">Track/Topic: Value 4</h3>
+            <p style="margin-bottom: 0;">Description for topic/category value 4, defining the [technical scope, range, and/or examples].</p>
+        </div>
+
+        <div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; border-left: 4px solid #512888; border-radius: 6px; padding: 20px; margin-bottom: 0;">
+            <h3 style="margin-top: 0; color: #512888;">Track/Topic: Value 5</h3>
+            <p style="margin-bottom: 0;">Description for topic/category value 5, defining the [technical scope, range, and/or examples].</p>
         </div>
     </div>
+
+    <!-- ========================================================================= -->
+    <!-- OPTIONAL DIMENSION 3: Execution Stages (3D Matrix Support)                -->
+    <!-- ========================================================================= -->
+    {{#if HAS_DIMENSION_3}}
+    <div style="margin-bottom: 40px;">
+        <h2>{{DIMENSION_3_TITLE}} (The Execution)</h2>
+        <p>{{DIMENSION_3_DESCRIPTION}}</p>
+        <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px;">
+            {{DIMENSION_3_CONTENT_HTML}}
+        </div>
+    </div>
+    {{/if}}
 
     <div style="margin-bottom: 40px;">
         <h2>Proposal Document Format</h2>
@@ -91,35 +120,35 @@
         <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #dddddd;">
             <h4 style="color: #512888; margin-top: 0;">1. Introduction</h4>
             <ul style="margin-bottom: 20px;">
-                <li><strong>Problem Statement:</strong> Clearly describe the AI/ML problem you intend to solve.</li>
-                <li><strong>Goal:</strong> What specific capability or improvement will your system accomplish?</li>
-                <li><strong>Context &amp; Dataset:</strong> Define your data source or domain. Clarify whether this is an investigation of novelty (Research) or utility (Application).</li>
+                <li><strong>Problem Statement:</strong> Clearly describe the core technical or scientific problem you intend to solve.</li>
+                <li><strong>Goal:</strong> What specific capability, system behavior, or performance milestone will your artifact accomplish?</li>
+                <li><strong>Context &amp; Datasets/Assets:</strong> Define your data source, media corpus, or execution pipeline. Clarify whether this is an investigation of novelty (Research) or utility (Application).</li>
             </ul>
 
             <h4 style="color: #512888;">2. Background &amp; Related Work</h4>
             <ul style="margin-bottom: 20px;">
-                <li>Summarize relevant prior work and foundational literature.</li>
+                <li>Summarize relevant prior work, foundational literature, or existing reference implementations.</li>
                 <li><strong>Requirement:</strong> At least 3 citations/references.</li>
-                <li><strong>Requirement:</strong> At least one archival/peer-reviewed source (ACM, IEEE, NeurIPS, ICML, CVPR, etc.).</li>
+                <li><strong>Requirement:</strong> At least one archival/peer-reviewed source (ACM, IEEE, NeurIPS, ICML, CVPR, SIGGRAPH, etc.).</li>
             </ul>
 
             <h4 style="color: #512888;">3. Methodology</h4>
             <ul style="margin-bottom: 20px;">
-                <li><strong>Baselines:</strong> What existing method or model architecture will serve as your comparative baseline? (e.g., standard fine-tuned baseline, rule-based agent).</li>
-                <li><strong>Proposed Approach:</strong> What novel algorithm, architecture, or system integration will you implement?</li>
-                <li><strong>Technical Specifics:</strong> Detail your modeling framework, training objective, algorithms, and software libraries. Avoid vague assertions.</li>
+                <li><strong>Baselines:</strong> What existing method, model architecture, or reference system will serve as your comparative baseline?</li>
+                <li><strong>Proposed Approach:</strong> What novel algorithm, pipeline modification, or system integration will you implement?</li>
+                <li><strong>Technical Specifics:</strong> Detail your software stack, libraries, engines, training objectives, or algorithms. Avoid vague assertions.</li>
             </ul>
 
             <h4 style="color: #512888;">4. Evaluation Plan</h4>
             <ul style="margin-bottom: 20px;">
-                <li><strong>Quantitative Metrics:</strong> Accuracy, F1-score, BLEU, ROC-AUC, reward convergence, or latency benchmarks.</li>
-                <li><strong>Qualitative Assessment:</strong> Error analysis, sample generation audits, or interpretive case studies.</li>
-                <li><strong>Validation Rigor:</strong> Train/test splits, cross-validation protocols, and statistical hypothesis testing (e.g., paired t-tests).</li>
+                <li><strong>Quantitative Metrics:</strong> Accuracy, F1-score, throughput, latency benchmarks, render times, or statistical convergence rates.</li>
+                <li><strong>Qualitative Assessment:</strong> Visual fidelity audits, error analysis, or comparative side-by-side walkthroughs.</li>
+                <li><strong>Validation Rigor:</strong> Train/test splits, cross-validation protocols, or controlled baseline comparison runs.</li>
             </ul>
 
             <h4 style="color: #512888;">5. Milestones &amp; Timeline</h4>
             <ul style="margin-bottom: 0;">
-                <li>List 3&ndash;6 dated objectives (e.g., <em>{{DATE_MILESTONE_EX}}: Baseline Architecture &amp; Data Pipeline Implemented</em>).</li>
+                <li>List 3&ndash;6 dated objectives (e.g., <em>{{DATE_MILESTONE_EX}}: Baseline Pipeline &amp; Ingestion Framework Established</em>).</li>
             </ul>
         </div>
     </div>
@@ -140,7 +169,7 @@
                 </tr>
                 <tr style="border-bottom: 1px solid #eee;">
                     <td style="padding: 12px;"><strong>Key Milestones</strong></td>
-                    <td style="padding: 12px;">Proposal ({{DATE_PROPOSAL_DUE}}), Interim Report ({{DATE_INTERIM}}), Final Presentations ({{DATE_PRESENTATION}}), Final Report &amp; Codebase ({{DATE_FINAL_DUE}}).</td>
+                    <td style="padding: 12px;">Proposal ({{DATE_PROPOSAL_DUE}}), Interim Report ({{DATE_INTERIM}}), Final Presentations ({{DATE_PRESENTATION}}), Final Report &amp; Repository ({{DATE_FINAL_DUE}}).</td>
                 </tr>
                 <tr>
                     <td style="padding: 12px;"><strong>Ethics &amp; GenAI Protocol</strong></td>
