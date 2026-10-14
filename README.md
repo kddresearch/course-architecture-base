@@ -1,6 +1,6 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.6"
+document_version: "2.7"
 document_last_updated_date: "2026-10-12"
 doctument_last_updated_time: "21:56:20 CDT"
 -->
@@ -47,18 +47,19 @@ doctument_last_updated_time: "21:56:20 CDT"
 
 | Directory / File | Description |
 | :--- | :--- |
-| `.github/` | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
-| `admin/` | Course policies and syllabus resources. |
-| `assignments/` | Homework, machine problems, project milestones, and labs. |
-| `exams_quizzes/` | Quizzes, exams, and other assessments  **that are *taken*, not submitted***. |
-| `lectures/` | Core lecture materials and related assets. |
-| `modules/` | Weekly/topic-based module directories (`module_00` to `module_13`). |
-| `phases/` | High-level course progression phase wrappers (`phase_01` to `phase_05`). |
-| `platforms/` | Platform-specific configurations and assets (Canvas, Gemini, Piazza). |
-| `reading_materials/` | Assigned papers, texts, and supplementary reading. |
-| `slides/` | Slide decks and archived presentations. |
-| `term_project/` | Rubrics, sprint specs, and `docker` compute configs for the term project. |
-| `README.md` | This file. |
+| [`.github/`](.github/) | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
+| [`admin/`](admin/) | Course policies and syllabus resources. |
+| [`assignments/`](assignments/) | Problem sets (PSs), machine problems (MPs), project milestones, and labs. |
+| [`exams_quizzes/`](exams_quizzes/) | Quizzes, exams, and other assessments **that are *taken*, not submitted***. |
+| [`lectures/`](lectures/) | Core lecture materials and related assets. |
+| [`modules/`](modules/) | Weekly/topic-based module directories (`module_00` to `module_13`). |
+| [`phases/`](phases/) | High-level course progression phase wrappers (`phase_01` to `phase_05`). |
+| [`platforms/`](platforms/) | Platform-specific configurations and assets (Canvas, Gemini, Piazza). |
+| [`reading_materials/`](reading_materials/) | Assigned papers, texts, and supplementary reading. |
+| [`slides/`](slides/) | Slide decks and archived presentations. |
+| [`templates/`](templates/) | HTML and Markdown templates for Canvas and other learning management systems. |
+| [`term_project/`](term_project/) | Rubrics, sprint specs, and `docker` compute configs for the term project. |
+| [`README.md`](README.md) | This file. |
 
 <hr>
 
