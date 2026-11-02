@@ -24,5 +24,5 @@ These templates rely on inline CSS to survive Canvas/LMS sanitization filters.
 * [`golden_template_universal_lecture_index_page.html`](golden_template_universal_lecture_index_page.html) - Index page for all lectures.
 * [`golden_template_universal_module_page.html`](golden_template_universal_module_page.html) - Weekly module wrappers with learning objectives.
 * [`golden_template_universal_phase_page.html`](golden_template_universal_phase_page.html) - High-level course progression blocks.
-* [`golden_template_universal_syllabus.html`](golden_template_universal_syllabus.html) - Official course syllabus with grading policy and contact information for instructor (and TA if applicable).
+* [`golden_template_universal_syllabus.html`](golden_template_universal_syllabus.html) - Official syllabus with grading policy, contact information for instructor (and TA if applicable).
 * [`golden_template_universal_term_project_proposal_page.html`](golden_template_universal_term_project_proposal_page.html) - Capstone scope and taxonomy definitions.
