@@ -1,3 +1,10 @@
+<!--
+yaml_schema_version: "2.3"
+document_version: "2.1"
+document_last_updated_date: "2026-11-01"
+document_last_updated_time: "23:42 CST"
+-->
+
 # Course Architecture: Golden HTML Templates
 **Status:** ACTIVE | **Format:** Dehydrated HTML
 
@@ -10,9 +17,11 @@ These templates rely on inline CSS to survive Canvas/LMS sanitization filters.
 * **Execution:** AI nodes must execute exact string replacement on `{{VARIABLE_NAME}}` tokens. Nodes are **STRICTLY FORBIDDEN** from altering inline `style="..."` attributes, modifying hex codes, or changing DOM nesting.
 
 ## Template Index
-* `Golden-Template.html` - Base structural layout.
-* `Golden_Template_Universal_Assignment_Page.html` - Standardized homework and machine problem specs.
-* `Golden_Template_Universal_Lecture_Page.html` - Individual lecture landing pages with slide/video routing.
-* `Golden_Template_Universal_Module_Page.html` - Weekly module wrappers with learning objectives.
-* `Golden_Template_Universal_Phase_Page.html` - High-level course progression blocks.
-* `Golden_Template_Universal_Term_Project_Proposal_Page.html` - Capstone scope and taxonomy definitions.
+* [`golden_template.html`](golden_template.html) - Base structural layout.
+* [`golden_template_universal_assignment_index_page.html`](golden_template_universal_assignment_index_page.html) - Listing of all planned assignments for the course.
+* [`golden_template_universal_assignment_page.html`](golden_template_universal_assignment_page.html) - Standardized homework and machine problem specs.
+* [`golden_template_universal_lecture_page.html`](golden_template_universal_lecture_page.html) - Individual lecture landing pages with slide/video routing.
+* [`golden_template_universal_lecture_index_page.html`](golden_template_universal_lecture_index_page.html) - Index page for all lectures.
+* [`golden_template_universal_module_page.html`](golden_template_universal_module_page.html) - Weekly module wrappers with learning objectives.
+* [`golden_template_universal_phase_page.html`](golden_template_universal_phase_page.html) - High-level course progression blocks.
+* [`golden_template_universal_term_project_proposal_page.html`](golden_template_universal_term_project_proposal_page.html) - Capstone scope and taxonomy definitions.
