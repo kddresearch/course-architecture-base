@@ -1,8 +1,8 @@
 <!--
 yaml_schema_version: "2.3"
-document_version: "2.1"
+document_version: "2.2"
 document_last_updated_date: "2026-11-01"
-document_last_updated_time: "23:42 CST"
+document_last_updated_time: "23:44 CST"
 -->
 
 # Course Architecture: Golden HTML Templates
@@ -24,4 +24,5 @@ These templates rely on inline CSS to survive Canvas/LMS sanitization filters.
 * [`golden_template_universal_lecture_index_page.html`](golden_template_universal_lecture_index_page.html) - Index page for all lectures.
 * [`golden_template_universal_module_page.html`](golden_template_universal_module_page.html) - Weekly module wrappers with learning objectives.
 * [`golden_template_universal_phase_page.html`](golden_template_universal_phase_page.html) - High-level course progression blocks.
+* [`golden_template_universal_syllabus.html`](golden_template_universal_syllabus.html) - Official course syllabus with grading policy and contact information for instructor (and TA if applicable).
 * [`golden_template_universal_term_project_proposal_page.html`](golden_template_universal_term_project_proposal_page.html) - Capstone scope and taxonomy definitions.
