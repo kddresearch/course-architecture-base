@@ -1,192 +1,187 @@
-<div style="max-width: 1000px; margin: 0 auto; font-family: 'Aptos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #ffffff;">
-    
-    <!-- Header -->
+<div style="max-width: 1000px; margin: 0px auto; font-family: Aptos, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333333; line-height: 1.6; border-radius: 8px; overflow: hidden; background-color: #ffffff; border: 1px solid #dddddd;">
     <div style="background: linear-gradient(135deg, #4b2e83 0%, #3a2366 100%); color: #fff; padding: 25px 30px; border-bottom: 5px solid #b7a57a;">
-        <h1 style="margin: 0; font-size: 28px; font-weight: 700;">Lectures</h1>
-        <h2 style="margin: 5px 0 0 0; font-size: 16px; font-weight: 300; color: #e6e2ef;">by week, module, date, and assigned readings</h2>
+        <h1 style="margin: 0; font-size: 28px;">Lectures</h1>
+        <h2 style="margin: 5px 0 0 0; font-size: 16px; color: #e6e2ef;">by week, module, date, and assigned readings</h2>
     </div>
-
-    <!-- Expanded Note Bar with Flexibility Note -->
     <div style="margin: 20px 30px; padding: 15px 20px; background-color: #f9f8fa; border-left: 5px solid #b7a57a; border-radius: 4px;">
-        <p style="margin: 0; font-size: 14px;"><strong>Note:</strong> Click on any <strong>Phase</strong>, <strong>Module</strong>, or <strong>Lecture</strong> link to view detailed page content, slide decks, and assigned readings. <em>Module cardinality across phases is fully customizable and illustrative (supporting multi-week splitting or single-module merging as required by individual course architectures)</em>. Refer to the <a href="{{READINGS_INDEX_URL}}" style="color: #4b2e83; font-weight: bold; text-decoration: none;">Readings by Lecture</a> index for complete source references.</p>
+        <p style="margin: 0; font-size: 14px; color: #333;"><strong>Note:</strong> Click on any <strong>Phase</strong>, <strong>Module</strong>, or <strong>Lecture</strong> link to view detailed page content, slide decks, and assigned readings. <em>Module cardinality across phases is fully customizable and illustrative (supporting multi-week splitting or single-module merging as required by individual course architectures)</em>. Refer to the <a style="color: #4b2e83; text-decoration: none;" href="{{READINGS_INDEX_URL}}">Readings by Lecture</a> index for complete source references.</p>
     </div>
-
-    <!-- Table Container -->
     <div style="padding: 0 30px 30px 30px; overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 14px; text-align: left;">
-            <thead>
-                <tr style="background-color: #333; color: #ffffff;">
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 6%;">Week</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 17%;">Date</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 10%; text-align: center;">Lecture</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 32%;">Topic</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 35%;">Readings</th>
+        <table style="width: 100%; border-collapse: collapse; font-size: 15px; text-align: left;">
+            <thead style="background-color: #f1f1f1; border-bottom: 2px solid #ccc;">
+                <tr>
+                    <th style="padding: 10px; width: 6%; color: #333333; border: 1px solid #dddddd;">Week</th>
+                    <th style="padding: 10px; width: 17%; color: #333333; border: 1px solid #dddddd;">Date</th>
+                    <th style="padding: 10px; width: 10%; text-align: center; color: #333333; border: 1px solid #dddddd;">Lecture</th>
+                    <th style="padding: 10px; width: 32%; color: #333333; border: 1px solid #dddddd;">Topic</th>
+                    <th style="padding: 10px; width: 35%; color: #333333; border: 1px solid #dddddd;">Readings</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- ========================================== -->
-                <!-- PHASE 1                                    -->
-                <!-- ========================================== -->
-                <tr><td colspan="5" style="background-color: #4b2e83; padding: 8px 12px; letter-spacing: 1px;"><a href="{{PHASE_1_URL}}" style="color: white; font-weight: bold; text-decoration: none;">Phase 1: {{PHASE_1_TITLE}}</a></td></tr>
-                
-                <!-- Module 00 (Phase 1, Module 1 - Tint 1) -->
-                <tr style="background-color: #f3f0f9; border-top: 2px solid #d1c4e9; border-bottom: 1px solid #d1c4e9;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_0_URL}}" style="color: #4b2e83; font-weight: bold; text-decoration: none;">Module 00 (Phase 1, Module 1): {{MODULE_0_TITLE}}</a></td></tr>
-                <tr style="background-color: #f8f5fc;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">1</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_0_URL}}" style="color: #9c27b0; text-decoration: none;">00</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-00" style="color: #4b2e83; text-decoration: none;">{{READING_REF_00}}</a></td>
+                <tr>
+                    <td style="background-color: #4b2e83; padding: 6px 15px;" colspan="5"><a style="color: white; font-size: 0.9em; text-decoration: none; display: block;" href="{{PHASE_1_URL}}">PHASE 1: {{PHASE_1_TITLE}}</a></td>
                 </tr>
-
-                <!-- Module 01 (Phase 1, Module 2 - Tint 2) -->
-                <tr style="background-color: #eaddf3; border-top: 2px solid #d1c4e9; border-bottom: 1px solid #d1c4e9;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_1_URL}}" style="color: #4b2e83; font-weight: bold; text-decoration: none;">Module 01 (Phase 1, Module 2): {{MODULE_1_TITLE}}</a></td></tr>
-                <tr style="background-color: #f1ebf9;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">2</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_1_URL}}" style="color: #9c27b0; text-decoration: none;">01</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-01" style="color: #4b2e83; text-decoration: none;">{{READING_REF_01}}</a></td>
+                <tr style="background-color: #e2d7f3; border-top: 2px solid #b39ddb; border-bottom: 1px solid #b39ddb;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #4b2e83; text-decoration: none;" href="{{MODULE_0_URL}}">Module 00 (Phase 1, Module 1): {{MODULE_0_TITLE}}</a></td>
                 </tr>
-
-                <!-- Module 02 (Phase 1, Module 3 - Tint 3) -->
-                <tr style="background-color: #d8c2ed; border-top: 2px solid #d1c4e9; border-bottom: 1px solid #d1c4e9;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_2_URL}}" style="color: #4b2e83; font-weight: bold; text-decoration: none;">Module 02 (Phase 1, Module 3): {{MODULE_2_TITLE}}</a></td></tr>
-                <tr style="background-color: #e9dff7;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">3</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_2_URL}}" style="color: #9c27b0; text-decoration: none;">02</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-02" style="color: #4b2e83; text-decoration: none;">{{READING_REF_02}}</a></td>
+                <tr style="background-color: #ece3f8;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">1</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{LECTURE_0_URL}}">00</a></td>
+                    <td style="padding: 10px; color: #4b2e83; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-00">{{READING_REF_00}}</a></td>
                 </tr>
-
-                <!-- ========================================== -->
-                <!-- PHASE 2                                    -->
-                <!-- ========================================== -->
-                <tr><td colspan="5" style="background-color: #0056b3; padding: 8px 12px; letter-spacing: 1px;"><a href="{{PHASE_2_URL}}" style="color: white; font-weight: bold; text-decoration: none;">Phase 2: {{PHASE_2_TITLE}}</a></td></tr>
-                
-                <!-- Module 03 (Phase 2, Module 1 - Tint 1) -->
-                <tr style="background-color: #cce4ff; border-top: 2px solid #bbdefb; border-bottom: 1px solid #bbdefb;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_3_URL}}" style="color: #0056b3; font-weight: bold; text-decoration: none;">Module 03 (Phase 2, Module 1): {{MODULE_3_TITLE}}</a></td></tr>
-                <tr style="background-color: #e0f0ff;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">4</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_3_URL}}" style="color: #0056b3; text-decoration: none;">03</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-03" style="color: #0056b3; text-decoration: none;">{{READING_REF_03}}</a></td>
+                <tr style="background-color: #d4c4ed; border-top: 2px solid #b39ddb; border-bottom: 1px solid #b39ddb;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #4b2e83; text-decoration: none;" href="{{MODULE_1_URL}}">Module 01 (Phase 1, Module 2): {{MODULE_1_TITLE}}</a></td>
                 </tr>
-
-                <!-- Module 04 (Phase 2, Module 2 - Tint 2) -->
-                <tr style="background-color: #b8d8ff; border-top: 2px solid #bbdefb; border-bottom: 1px solid #bbdefb;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_4_URL}}" style="color: #0056b3; font-weight: bold; text-decoration: none;">Module 04 (Phase 2, Module 2): {{MODULE_4_TITLE}}</a></td></tr>
-                <tr style="background-color: #d2e9fd;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">5</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_4_URL}}" style="color: #0056b3; text-decoration: none;">04</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-04" style="color: #0056b3; text-decoration: none;">{{READING_REF_04}}</a></td>
+                <tr style="background-color: #e2d7f5;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">2</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{LECTURE_1_URL}}">01</a></td>
+                    <td style="padding: 10px; color: #4b2e83; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-01">{{READING_REF_01}}</a></td>
                 </tr>
-
-                <!-- Module 05 (Phase 2, Module 3 - Tint 3) -->
-                <tr style="background-color: #99c6ff; border-top: 2px solid #bbdefb; border-bottom: 1px solid #bbdefb;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_5_URL}}" style="color: #0056b3; font-weight: bold; text-decoration: none;">Module 05 (Phase 2, Module 3): {{MODULE_5_TITLE}}</a></td></tr>
-                <tr style="background-color: #bce0ff;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">6</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_5_URL}}" style="color: #0056b3; text-decoration: none;">05</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-05" style="color: #0056b3; text-decoration: none;">{{READING_REF_05}}</a></td>
+                <tr style="background-color: #c6b0e7; border-top: 2px solid #b39ddb; border-bottom: 1px solid #b39ddb;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #4b2e83; text-decoration: none;" href="{{MODULE_2_URL}}">Module 02 (Phase 1, Module 3): {{MODULE_2_TITLE}}</a></td>
                 </tr>
-
-                <!-- ========================================== -->
-                <!-- PHASE 3                                    -->
-                <!-- ========================================== -->
-                <tr><td colspan="5" style="background-color: #1e7e34; padding: 8px 12px; letter-spacing: 1px;"><a href="{{PHASE_3_URL}}" style="color: white; font-weight: bold; text-decoration: none;">Phase 3: {{PHASE_3_TITLE}}</a></td></tr>
-                
-                <!-- Module 06 (Phase 3, Module 1 - Tint 1) -->
-                <tr style="background-color: #c8e6c9; border-top: 2px solid #a5d6a7; border-bottom: 1px solid #a5d6a7;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_6_URL}}" style="color: #1e7e34; font-weight: bold; text-decoration: none;">Module 06 (Phase 3, Module 1): {{MODULE_6_TITLE}}</a></td></tr>
-                <tr style="background-color: #e8f5e9;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">7</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_6_URL}}" style="color: #1e7e34; text-decoration: none;">06</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-06" style="color: #1e7e34; text-decoration: none;">{{READING_REF_06}}</a></td>
+                <tr style="background-color: #d8ccf2;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">3</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{LECTURE_2_URL}}">02</a></td>
+                    <td style="padding: 10px; color: #4b2e83; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #4b2e83; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-02">{{READING_REF_02}}</a></td>
                 </tr>
-
-                <!-- Module 07 (Phase 3, Module 2 - Tint 2) -->
-                <tr style="background-color: #a5d6a7; border-top: 2px solid #a5d6a7; border-bottom: 1px solid #a5d6a7;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_7_URL}}" style="color: #1e7e34; font-weight: bold; text-decoration: none;">Module 07 (Phase 3, Module 2): {{MODULE_7_TITLE}}</a></td></tr>
-                <tr style="background-color: #d0f0d8;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">8</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_7_URL}}" style="color: #1e7e34; text-decoration: none;">07</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-07" style="color: #1e7e34; text-decoration: none;">{{READING_REF_07}}</a></td>
+                <tr>
+                    <td style="background-color: #0056b3; padding: 6px 15px;" colspan="5"><a style="color: white; font-size: 0.9em; text-decoration: none; display: block;" href="{{PHASE_2_URL}}">PHASE 2: {{PHASE_2_TITLE}}</a></td>
                 </tr>
-
-                <!-- ========================================== -->
-                <!-- PHASE 4                                    -->
-                <!-- ========================================== -->
-                <tr><td colspan="5" style="background-color: #d64309; padding: 8px 12px; letter-spacing: 1px;"><a href="{{PHASE_4_URL}}" style="color: white; font-weight: bold; text-decoration: none;">Phase 4: {{PHASE_4_TITLE}}</a></td></tr>
-                
-                <!-- Module 08 (Phase 4, Module 1 - Tint 1) -->
-                <tr style="background-color: #ffccbc; border-top: 2px solid #ffab91; border-bottom: 1px solid #ffab91;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_8_URL}}" style="color: #d64309; font-weight: bold; text-decoration: none;">Module 08 (Phase 4, Module 1): {{MODULE_8_TITLE}}</a></td></tr>
-                <tr style="background-color: #fff3e0;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">9</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_8_URL}}" style="color: #d64309; text-decoration: none;">08</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-08" style="color: #d64309; text-decoration: none;">{{READING_REF_08}}</a></td>
+                <tr style="background-color: #bfe0ff; border-top: 2px solid #90caf9; border-bottom: 1px solid #90caf9;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #0056b3; text-decoration: none;" href="{{MODULE_3_URL}}">Module 03 (Phase 2, Module 1): {{MODULE_3_TITLE}}</a></td>
                 </tr>
-
-                <!-- Module 09 (Phase 4, Module 2 - Tint 2) -->
-                <tr style="background-color: #ffab91; border-top: 2px solid #ffab91; border-bottom: 1px solid #ffab91;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_9_URL}}" style="color: #d64309; font-weight: bold; text-decoration: none;">Module 09 (Phase 4, Module 2): {{MODULE_9_TITLE}}</a></td></tr>
-                <tr style="background-color: #ffe0b2;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">10</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_9_URL}}" style="color: #d64309; text-decoration: none;">09</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-09" style="color: #d64309; text-decoration: none;">{{READING_REF_09}}</a></td>
+                <tr style="background-color: #d4ebff;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">4</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{LECTURE_3_URL}}">03</a></td>
+                    <td style="padding: 10px; color: #0056b3; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-03">{{READING_REF_03}}</a></td>
                 </tr>
-
-                <!-- Module 10 (Phase 4, Module 3 - Tint 3) -->
-                <tr style="background-color: #ff8a65; border-top: 2px solid #ffab91; border-bottom: 1px solid #ffab91;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_10_URL}}" style="color: #d64309; font-weight: bold; text-decoration: none;">Module 10 (Phase 4, Module 3): {{MODULE_10_TITLE}}</a></td></tr>
-                <tr style="background-color: #ffccbc;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">11</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_10_URL}}" style="color: #d64309; text-decoration: none;">10</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-10" style="color: #d64309; text-decoration: none;">{{READING_REF_10}}</a></td>
+                <tr style="background-color: #aadaff; border-top: 2px solid #90caf9; border-bottom: 1px solid #90caf9;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #0056b3; text-decoration: none;" href="{{MODULE_4_URL}}">Module 04 (Phase 2, Module 2): {{MODULE_4_TITLE}}</a></td>
                 </tr>
-
-                <!-- ========================================== -->
-                <!-- PHASE 5                                    -->
-                <!-- ========================================== -->
-                <tr><td colspan="5" style="background-color: #856404; padding: 8px 12px; letter-spacing: 1px;"><a href="{{PHASE_5_URL}}" style="color: white; font-weight: bold; text-decoration: none;">Phase 5: {{PHASE_5_TITLE}}</a></td></tr>
-                
-                <!-- Module 11 (Phase 5, Module 1 - Tint 1) -->
-                <tr style="background-color: #fff59d; border-top: 2px solid #fff176; border-bottom: 1px solid #fff176;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_11_URL}}" style="color: #856404; font-weight: bold; text-decoration: none;">Module 11 (Phase 5, Module 1): {{MODULE_11_TITLE}}</a></td></tr>
-                <tr style="background-color: #fffde7;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">12</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_11_URL}}" style="color: #856404; text-decoration: none;">11</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-11" style="color: #856404; text-decoration: none;">{{READING_REF_11}}</a></td>
+                <tr style="background-color: #c4e4ff;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">5</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{LECTURE_4_URL}}">04</a></td>
+                    <td style="padding: 10px; color: #0056b3; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-04">{{READING_REF_04}}</a></td>
                 </tr>
-
-                <!-- Module 12 (Phase 5, Module 2 - Tint 2) -->
-                <tr style="background-color: #fff176; border-top: 2px solid #fff176; border-bottom: 1px solid #fff176;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_12_URL}}" style="color: #856404; font-weight: bold; text-decoration: none;">Module 12 (Phase 5, Module 2): {{MODULE_12_TITLE}}</a></td></tr>
-                <tr style="background-color: #fffde7;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">13</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_12_URL}}" style="color: #856404; font-weight: bold; text-decoration: none;">12</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-12" style="color: #856404; text-decoration: none;">{{READING_REF_12}}</a></td>
+                <tr style="background-color: #94d1ff; border-top: 2px solid #90caf9; border-bottom: 1px solid #90caf9;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #0056b3; text-decoration: none;" href="{{MODULE_5_URL}}">Module 05 (Phase 2, Module 3): {{MODULE_5_TITLE}}</a></td>
                 </tr>
-
-                <!-- Module 13 (Phase 5, Module 3 - Tint 3) -->
-                <tr style="background-color: #ffee58; border-top: 2px solid #fff176; border-bottom: 1px solid #fff176;"><td colspan="5" style="padding: 6px 12px;"><a href="{{MODULE_13_URL}}" style="color: #856404; font-weight: bold; text-decoration: none;">Module 13 (Phase 5, Module 3): {{MODULE_13_TITLE}}</a></td></tr>
-                <tr style="background-color: #fffde7;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">14</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{ddd dd mmm yyyy}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; text-align: center;"><a href="{{LECTURE_13_URL}}" style="color: #856404; text-decoration: none;">13</a></td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">{{TOPIC_TITLE}}</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><a href="{{READINGS_INDEX_URL}}#lec-13" style="color: #856404; text-decoration: none;">{{READING_REF_13}}</a></td>
+                <tr style="background-color: #b3dfff;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">6</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{LECTURE_5_URL}}">05</a></td>
+                    <td style="padding: 10px; color: #0056b3; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #0056b3; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-05">{{READING_REF_05}}</a></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #1e7e34; padding: 6px 15px;" colspan="5"><a style="color: white; font-size: 0.9em; text-decoration: none; display: block;" href="{{PHASE_3_URL}}">PHASE 3: {{PHASE_3_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #b8e6bd; border-top: 2px solid #81c784; border-bottom: 1px solid #81c784;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #1e7e34; text-decoration: none;" href="{{MODULE_6_URL}}">Module 06 (Phase 3, Module 1): {{MODULE_6_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #d2f2d6;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">7</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{LECTURE_6_URL}}">06</a></td>
+                    <td style="padding: 10px; color: #1e7e34; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-06">{{READING_REF_06}}</a></td>
+                </tr>
+                <tr style="background-color: #a2dcab; border-top: 2px solid #81c784; border-bottom: 1px solid #81c784;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #1e7e34; text-decoration: none;" href="{{MODULE_7_URL}}">Module 07 (Phase 3, Module 2): {{MODULE_7_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #c0ebc6;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">8</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{LECTURE_7_URL}}">07</a></td>
+                    <td style="padding: 10px; color: #1e7e34; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-07">{{READING_REF_07}}</a></td>
+                </tr>
+                <tr style="background-color: #8cd297; border-top: 2px solid #81c784; border-bottom: 1px solid #81c784;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #1e7e34; text-decoration: none;" href="{{MODULE_8_URL}}">Module 08 (Phase 3, Module 3): {{MODULE_8_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #aee4b5;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">9</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{LECTURE_8_URL}}">08</a></td>
+                    <td style="padding: 10px; color: #1e7e34; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #1e7e34; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-08">{{READING_REF_08}}</a></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #d64309; padding: 6px 15px;" colspan="5"><a style="color: white; font-size: 0.9em; text-decoration: none; display: block;" href="{{PHASE_4_URL}}">PHASE 4: {{PHASE_4_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fcc9b5; border-top: 2px solid #ff8a65; border-bottom: 1px solid #ff8a65;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #d64309; text-decoration: none;" href="{{MODULE_9_URL}}">Module 09 (Phase 4, Module 1): {{MODULE_9_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fde2d7;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">10</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{LECTURE_9_URL}}">09</a></td>
+                    <td style="padding: 10px; color: #d64309; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-09">{{READING_REF_09}}</a></td>
+                </tr>
+                <tr style="background-color: #fbb59d; border-top: 2px solid #ff8a65; border-bottom: 1px solid #ff8a65;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #d64309; text-decoration: none;" href="{{MODULE_10_URL}}">Module 10 (Phase 4, Module 2): {{MODULE_10_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fcd7ca;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">11</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{LECTURE_10_URL}}">10</a></td>
+                    <td style="padding: 10px; color: #d64309; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-10">{{READING_REF_10}}</a></td>
+                </tr>
+                <tr style="background-color: #f9a084; border-top: 2px solid #ff8a65; border-bottom: 1px solid #ff8a65;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #d64309; text-decoration: none;" href="{{MODULE_11_URL}}">Module 11 (Phase 4, Module 3): {{MODULE_11_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fbccbc;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">12</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{LECTURE_11_URL}}">11</a></td>
+                    <td style="padding: 10px; color: #d64309; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #d64309; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-11">{{READING_REF_11}}</a></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #856404; padding: 6px 15px;" colspan="5"><a style="color: white; font-size: 0.9em; text-decoration: none; display: block;" href="{{PHASE_5_URL}}">PHASE 5: {{PHASE_5_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fdeaa3; border-top: 2px solid #fbc02d; border-bottom: 1px solid #fbc02d;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #856404; text-decoration: none;" href="{{MODULE_12_URL}}">Module 12 (Phase 5, Module 1): {{MODULE_12_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fef4c9;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">13</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{LECTURE_12_URL}}">12</a></td>
+                    <td style="padding: 10px; color: #856404; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-12">{{READING_REF_12}}</a></td>
+                </tr>
+                <tr style="background-color: #fde283; border-top: 2px solid #fbc02d; border-bottom: 1px solid #fbc02d;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #856404; text-decoration: none;" href="{{MODULE_13_URL}}">Module 13 (Phase 5, Module 2): {{MODULE_13_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #feebb4;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">14</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{LECTURE_13_URL}}">13</a></td>
+                    <td style="padding: 10px; color: #856404; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-13">{{READING_REF_13}}</a></td>
+                </tr>
+                <tr style="background-color: #fcd962; border-top: 2px solid #fbc02d; border-bottom: 1px solid #fbc02d;">
+                    <td style="padding: 6px 12px;" colspan="5"><a style="color: #856404; text-decoration: none;" href="{{MODULE_14_URL}}">Module 14 (Phase 5, Module 3): {{MODULE_14_TITLE}}</a></td>
+                </tr>
+                <tr style="background-color: #fde29f;">
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">15</td>
+                    <td style="padding: 10px; color: #555555; border: 1px solid #dddddd;">{{ddd dd mmm yyyy}}</td>
+                    <td style="padding: 10px; text-align: center; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{LECTURE_14_URL}}">14</a></td>
+                    <td style="padding: 10px; color: #856404; border: 1px solid #dddddd;">{{TOPIC_TITLE}}</td>
+                    <td style="padding: 10px; border: 1px solid #dddddd;"><a style="color: #856404; text-decoration: none;" href="{{READINGS_INDEX_URL}}#lec-14">{{READING_REF_14}}</a></td>
                 </tr>
             </tbody>
         </table>
