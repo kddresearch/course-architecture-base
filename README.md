@@ -1,8 +1,8 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.7"
-document_last_updated_date: "2026-10-12"
-doctument_last_updated_time: "21:56:20 CDT"
+document_version: "2.8"
+document_last_updated_date: "2026-11-26"
+doctument_last_updated_time: "23:37:04 CST"
 -->
 
 <br>
@@ -118,6 +118,9 @@ C:.
 |   \---project_sprints
 |           .gitkeep
 |           
++---docs
+|       .gitkeep
+|       
 +---exams_quizzes
 |       ,gitkeep
 |       
@@ -125,9 +128,11 @@ C:.
 |       .gitkeep
 |       lecture_10_slide_template.md
 |       lecture_template.md
+|       README.md
 |       
 +---modules
 |   |   module_template.md
+|   |   README.md
 |   |   
 |   +---module_00
 |   |       .gitkeep
@@ -172,6 +177,9 @@ C:.
 |           .gitkeep
 |           
 +---phases
+|   |   phase_template.md
+|   |   README.md
+|   |   
 |   +---phase_01
 |   |       .gitkeep
 |   |       
@@ -217,15 +225,21 @@ C:.
 |           
 +---templates
 |   +---html_layouts
-|   |       Golden Template - Universal Assignment Page.html
-|   |       Golden Template - Universal Lecture Page.html
-|   |       Golden Template - Universal Module Page.html
-|   |       Golden Template - Universal Phase Page.html
-|   |       Golden Template - Universal Term Project Proposal Page.html
-|   |       Golden-Template.html
+|   |       golden_template.html
+|   |       golden_template_universal_assignment_index_page.html
+|   |       golden_template_universal_assignment_page.html
+|   |       golden_template_universal_lecture_index_page.html
+|   |       golden_template_universal_lecture_page.html
+|   |       golden_template_universal_module_index_page.html
+|   |       golden_template_universal_module_page.html
+|   |       golden_template_universal_phase_index_page.html
+|   |       golden_template_universal_phase_page.html
+|   |       golden_template_universal_syllabus.html
+|   |       golden_template_universal_term_project_proposal_page
 |   |       README.md
 |   |       
 |   \---repo_structures
+|           directory_README_academic_template.md
 |           module_README_template.md
 |           phase_README_template.md
 |           
@@ -233,6 +247,6 @@ C:.
     |   .gitkeep
     |   
     \---docker
-            .gitkeep
+            .gitkeep            
 ```
 </details>
